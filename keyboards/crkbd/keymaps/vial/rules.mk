@@ -9,3 +9,9 @@ LTO_ENABLE          = yes
 QMK_SETTINGS        = no
 COMBO_ENABLE        = no
 
+
+# from Vial reducing firmware size
+TAP_DANCE_ENABLE	= no
+KEY_OVERRIDE_ENABLE = no
+# end reducing firmware size
+

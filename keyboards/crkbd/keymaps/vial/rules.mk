@@ -3,7 +3,7 @@ RGBLIGHT_ENABLE     = no      # Enable WS2812 RGB underlight.
 RGB_MATRIX_ENABLE   = yes
 VIA_ENABLE          = yes     # Enable VIA
 VIAL_ENABLE         = yes     # Enable VIAL
-OLED_ENABLE         = yes
+OLED_ENABLE         = no
 OLED_DRIVER         = SSD1306
 # EXTRAKEY_ENABLE     = yes
 LTO_ENABLE          = yes
@@ -30,3 +30,5 @@ AVR_USE_MINIMAL_PRINTF = yes
 
 MUSIC_ENABLE = no
 # end QMK squeezing
+
+VIALRGB_ENABLE = yes

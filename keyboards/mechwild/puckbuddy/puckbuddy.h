@@ -48,6 +48,7 @@ enum keyboard_keycodes {
 #endif
     DPI_DN,
     DPI_FINE,
+    DPI_GROSS,
     TAP_UP,
     TAP_DN,
     TAP_ON,

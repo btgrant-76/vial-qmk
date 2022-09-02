@@ -21,6 +21,11 @@
     "shortName": "DPI_FINE"
   },
   {
+    "name": "GROSS",
+    "title": "Temporarily raise the DPI while held.",
+    "shortName": "DPI_GROSS"
+  },
+  {
     "name": "TAP+",
     "title": "Increase the tapping term.",
     "shortname": "TAP_UP"

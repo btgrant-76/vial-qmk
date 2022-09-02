@@ -8,7 +8,7 @@
 
 #ifndef GLIDEPOINT_DPI_OPTIONS
 #    define GLIDEPOINT_DPI_OPTIONS \
-        { 400, 800, 1000, 1200, 1600, 2000, 2400, 2800, 3200, 3600, 4000 }
+        { 400, 800, 1200, 1600, 2000, 2400, 2800, 3200, 3600, 4000 }
 #    ifndef GLIDEPOINT_DPI_DEFAULT
 #        define GLIDEPOINT_DPI_DEFAULT 1
 #    endif
@@ -268,11 +268,19 @@ bool process_record_kb(uint16_t keycode, keyrecord_t* record) {
             return false;
         case DPI_FINE:
             if (record->event.pressed) {
-                pointing_device_set_cpi(dpi_array[4]);
+                pointing_device_set_cpi(dpi_array[0]);
             } else {
                 pointing_device_set_cpi(dpi_array[keyboard_config.dpi_config]);
             }
             return false;
+        case DPI_GROSS:
+            if (record->event.pressed) {
+                pointing_device_set_cpi(1200);
+            } else {
+                pointing_device_set_cpi(dpi_array[keyboard_config.dpi_config]);
+            }
+            return false;
+
 #endif
 #ifdef DYNAMIC_TAPPING_TERM_ENABLE // only include tap info keycodes if it is being configured dynamically
         case TAP_UP:
